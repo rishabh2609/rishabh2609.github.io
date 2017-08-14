@@ -15,46 +15,41 @@ body, html {
 	font-family: hLight;
 	text-align: center;
 }
+span {
+	transition: all 0.5s ease;
+}
 #splash {
-	position: fixed;
-	width: 2px;
-	height: 2px;
-	background: #e62b1e;
-	border-radius: 100%;
-	transform-origin: 50% 50%;
+	background: #ff2b06;
+	width: 10px;
+	height: 10px;
 	transform: translate(50vw, 50vh);
-	opacity: 0.5;
+	transform-origin: 50% 50%;
+	border-radius: 100%;
 }
-#ted_logo {
-	transform: translate(500px, 0px);
+.hidden {
+	display: none;
 }
-#college {
-	transform-origin: 0px 0px;
-	transform: rotateX(90deg);
+small {
+	color: #fff !important;
+	margin-left: 20px;
 }
-#coming_label {
-	position: absolute;
-	top: 60%;
-	width: 100%;
+ul {
+	list-style-type: none;
+}
+li {
+	display: inline;
+	margin: 20px;
+}
+#main_info_cont, #coming_soon {
 	opacity: 0;
-	color: #fff;
-	text-align: center;
-	font-family: hBold;
 }
 .jumbotron {
+	min-height: 100vh;
 	background: transparent;
 }
-#info {
-	text-align: center;
-	overflow-x: hidden;
-	max-width: 500px;
-	margin-top: 20vh;
+.transformation {
+	opacity: 0;
 }
-footer {
-	padding: 40px;
-	position: fixed;
-	top: 85%;
-	z-index: 999;
-	color: #fff;
-	text-align: center;
+h1 {
+	font-family: hBold;
 }
