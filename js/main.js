@@ -1,6 +1,6 @@
 
 function splittext() {
-	var i = -10;
+	var i = -2;
 	var interval = setInterval(
 		function() {
 			i++;
@@ -9,19 +9,19 @@ function splittext() {
 			$(obj).addClass('transformation');
 			obj = '#' + (i - 1);
 			$(obj).removeClass('transformation');
-			if(i == 20){
+			if(i == 12){
 				clearInterval(interval);
 				start();
 			}
 		}
-		,250
+		,150
 	);	
 }
 function start() {
 	$('body').css('background', 'black');
 	$('#splash').addClass('hidden');
 	TweenMax.to('#coming_soon', 0.5, {
-		opacity: 1
+		opacity: 0.3
 	}
 	);
 	TweenMax.to('#main_info_cont', 1, {

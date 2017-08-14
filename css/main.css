@@ -16,7 +16,7 @@ body, html {
 	text-align: center;
 }
 span {
-	transition: all 0.5s ease;
+	transition: all 0.2s ease;
 }
 #splash {
 	background: black;
