@@ -14,9 +14,11 @@ body, html {
 	color: #fff;
 	font-family: hLight;
 	text-align: center;
+	overflow: hidden;
 }
 span {
-	transition: all 0.2s ease;
+	transition: all 0.18s ease;
+	font-size: 3.5rem;
 }
 #splash {
 	background: black;
@@ -44,25 +46,41 @@ li {
 #main_info_cont, #coming_soon {
 	opacity: 0;
 }
+#main_info_cont {
+	margin-top: 30px;
+	height: 200px;
+}
 .jumbotron {
 	min-height: 100vh;
 	background: transparent;
 }
+.transformation_light {
+	color: rgba(230, 43, 30, 0.5);
+}
 .transformation {
-	opacity: 0;
+	color: rgba(230, 43, 30, 1);	
 }
 h1 {
 	font-family: hBold;
 }
-
+#logo {
+	width: 128px;
+}
 @media only screen and (max-width: 1000px) {
+    #main_info_cont {
+    	height: 110px; 
+    }
     span {
-    	margin-left: -10px;
+    	font-size: 2.5rem;
     }
 }
 @media only screen and (max-width: 325px) {
     #main_info_cont {
-    	margin-top: 50px !important; 
+    	margin-top: 50px !important;
+    	height: 128px; 
+    }
+    span {
+    	font-size: 2rem;
     }
     small {
     	display: block;
@@ -71,6 +89,10 @@ h1 {
     	margin-top: 40px !important;	
     }
     footer {
+    	font-size: 1rem;
     	margin-top: 100px !important;	
+    }
+    #logo {
+    	width: 96px;
     }
 }
